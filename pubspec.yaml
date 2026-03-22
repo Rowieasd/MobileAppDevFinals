@@ -15,22 +15,22 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  rename: ^3.0.2   
 
 flutter:
   uses-material-design: true
   assets:
-  - assets/images/esoleva.png
-  - assets/images/nikepromina.jpg
-  - assets/images/nikestructure26.jpg
-  - assets/images/airjordan1mid.jpg
-  - assets/images/airjordan1midse.jpg
-  - assets/images/airjordan5retroog.jpg
-  - assets/images/airjordan4retroogfc.jpg
-  - assets/images/jordanluka5pf.jpg
-  - assets/images/nikevaporflynext4.jpg
-  - assets/images/nikeairwinflo12.jpg
-  - assets/images/nikevomeroplusqs.jpg
-  - assets/images/nikesbreactleo.jpg
-  - assets/images/nikev5rnr.jpg
-  - assets/images/airforce107tech.jpg
-  
+    - assets/images/esoleva.png
+    - assets/images/nikepromina.jpg
+    - assets/images/nikestructure26.jpg
+    - assets/images/airjordan1mid.jpg
+    - assets/images/airjordan1midse.jpg
+    - assets/images/airjordan5retroog.jpg
+    - assets/images/airjordan4retroogfc.jpg
+    - assets/images/jordanluka5pf.jpg
+    - assets/images/nikevaporflynext4.jpg
+    - assets/images/nikeairwinflo12.jpg
+    - assets/images/nikevomeroplusqs.jpg
+    - assets/images/nikesbreactleo.jpg
+    - assets/images/nikev5rnr.jpg
+    - assets/images/airforce107tech.jpg
