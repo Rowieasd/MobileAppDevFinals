@@ -19,7 +19,7 @@ class CartPage extends StatelessWidget {
 
           return Column(
             children: [
-              /// 🛒 CART ITEMS
+              /// CART ITEMS
               Expanded(
                 child: ListView.builder(
                   itemCount: items.length,
@@ -37,7 +37,7 @@ class CartPage extends StatelessWidget {
                         padding: const EdgeInsets.all(10),
                         child: Row(
                           children: [
-                            /// 🔥 PRODUCT IMAGE
+                            ///  PRODUCT IMAGE
                             ClipRRect(
                               borderRadius: BorderRadius.circular(8),
                               child: Image.asset(
@@ -55,7 +55,7 @@ class CartPage extends StatelessWidget {
 
                             const SizedBox(width: 10),
 
-                            /// 🔥 PRODUCT DETAILS
+                            ///  PRODUCT DETAILS
                             Expanded(
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -72,7 +72,7 @@ class CartPage extends StatelessWidget {
 
                                   const SizedBox(height: 6),
 
-                                  /// 🔥 SUBTOTAL
+                                  ///  SUBTOTAL
                                   Text(
                                     "Subtotal: \$${subtotal.toStringAsFixed(2)}",
                                     style: const TextStyle(
@@ -84,7 +84,7 @@ class CartPage extends StatelessWidget {
                               ),
                             ),
 
-                            /// 🔥 QUANTITY CONTROLS
+                            ///  QUANTITY CONTROLS
                             Row(
                               children: [
                                 IconButton(
@@ -110,7 +110,7 @@ class CartPage extends StatelessWidget {
                 ),
               ),
 
-              /// 💰 TOTAL + CHECKOUT
+              ///  TOTAL + CHECKOUT
               SafeArea(
                 top: false, // we only want bottom safe area here
                 child: Container(

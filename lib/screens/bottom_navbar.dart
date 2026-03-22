@@ -41,7 +41,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             BoxShadow(
               color: Colors.black.withOpacity(0.1),
               blurRadius: 6,
-              offset: Offset(0, -2), // shadow goes upward
+              offset: Offset(0, -2),
             ),
           ],
         ),
@@ -66,7 +66,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             ),
           ],
           elevation: 5,
-          //showUnselectedLabels: false,
+
           selectedItemColor: Colors.deepPurple,
           currentIndex: _selectedIndex,
           onTap: _onItemTapped,

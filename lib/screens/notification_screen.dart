@@ -59,7 +59,6 @@ class _NotificationScreenState extends State<NotificationScreen> {
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
-      /// 🔥 Android back button behavior
       onWillPop: () async {
         _goToHome();
         return false;
@@ -69,7 +68,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
           title: const Text('Notifications'),
           backgroundColor: Colors.deepPurple,
           elevation: 0,
-          automaticallyImplyLeading: false, // ✅ removes back button
+          automaticallyImplyLeading: false,
         ),
         backgroundColor: Colors.grey[50],
 
@@ -125,12 +124,11 @@ class _NotificationScreenState extends State<NotificationScreen> {
             },
           ),
 
-          /// 🔥 UPDATED SNACKBAR (0.2 seconds)
           onTap: () {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
                 content: Text(notification['title']),
-                duration: const Duration(milliseconds: 200), // ✅ 0.2 sec
+                duration: const Duration(milliseconds: 200),
               ),
             );
           },

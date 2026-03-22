@@ -32,7 +32,7 @@ class _SigninScreenState extends State<SigninScreen> {
 
     String errorMessage = '';
 
-    /// 🔥 CUSTOM CONDITIONS
+    ///  CUSTOM CONDITIONS
     if (inputUsername.isEmpty && inputPassword.isEmpty) {
       errorMessage = 'No username/email and no password entered';
     } else if (inputUsername.isEmpty && inputPassword.isNotEmpty) {
@@ -46,7 +46,7 @@ class _SigninScreenState extends State<SigninScreen> {
     } else if (inputUsername != username && inputPassword != password) {
       errorMessage = 'Invalid username/email and password';
     } else {
-      /// ✅ SUCCESS LOGIN
+      ///  SUCCESS LOGIN
       setState(() {
         _isLoading = false;
       });
@@ -58,7 +58,7 @@ class _SigninScreenState extends State<SigninScreen> {
       return;
     }
 
-    /// ❌ SHOW ERROR
+    ///  SHOW ERROR
     setState(() {
       _isLoading = false;
     });
@@ -103,7 +103,7 @@ class _SigninScreenState extends State<SigninScreen> {
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      /// 🔥 LOGO
+                      ///  LOGO
                       Center(
                         child: Container(
                           width: 200,
