@@ -21,7 +21,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            /// 🔥 PROFILE HEADER
+            /// PROFILE HEADER
             Container(
               decoration: const BoxDecoration(
                 color: Colors.deepPurple,
@@ -60,7 +60,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
             const SizedBox(height: 24),
 
-            /// 🔥 ACCOUNT SETTINGS
+            /// ACCOUNT SETTINGS
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
@@ -101,7 +101,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
             const SizedBox(height: 24),
 
-            /// 🔥 MORE OPTIONS
+            /// MORE OPTIONS
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
@@ -138,7 +138,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
             const SizedBox(height: 24),
 
-            /// 🔥 LOGOUT BUTTON
+            /// LOGOUT BUTTON
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: ElevatedButton.icon(
@@ -165,7 +165,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
-  /// 🔥 PROFILE OPTION TILE WITH 0.2s SNACKBAR
+  /// PROFILE
   Widget _buildProfileOption(IconData icon, String title, String subtitle) {
     return Card(
       elevation: 2,
@@ -184,7 +184,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text('$title opened'),
-              duration: const Duration(milliseconds: 450), // ✅ 0.2 sec
+              duration: const Duration(milliseconds: 450),
             ),
           );
         },
@@ -192,7 +192,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
-  /// 🔥 LOGOUT DIALOG
+  /// LOGOUT DIALOG
   void _showLogoutDialog(BuildContext context) {
     showDialog(
       context: context,
